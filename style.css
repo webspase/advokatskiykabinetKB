@@ -1,0 +1,344 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.section a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.title-text {
+  text-align: center;
+}
+
+.button {
+  margin-top: 30px;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  border: 1px solid white;
+  padding: 0 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background-color: #f2f2f2;
+}
+
+h1{
+  font-family: "Cormorant Garamond";
+  font-size: 70px;
+  text-align: center;
+  color: #000000;
+}
+
+.container{
+  align-content: center;
+}
+
+h2{
+   font-family: "Cormorant Garamond";
+  font-size: 35px;
+  text-align: center;
+  color: #000000;
+}
+
+ 
+h3{
+  border-bottom: 3px solid #bdb1b1;
+  padding-bottom: 12px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.features {
+  margin-top: 25px;
+  margin: 0 auto 30px;
+  padding: 0 70px;
+  background-color: #f9f8f8;
+}
+
+.product-card {
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 60px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ol {
+  padding-left: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.card {
+  border-radius: 8px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.product-card h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .product-card img {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  
+  .product-card p {
+    text-align: left;
+  }
+}
+
+header {
+  background-image: url("1.png");
+  color: #fff;
+  padding: 370px;
+}
+
+.site-footer {
+  min-width: 100%;
+  height: 70px;
+  background-image: url(1.png);
+  color: #ffffff;
+}
+
+.site-footer .container {
+  text-align: center;
+}
+
+.site-footer p {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.advantages {
+  background-color: #F5F4F3;
+  width: cover;
+  margin: 0 auto 60px;
+  padding: 0 200px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 25px;
+}
+
+.advantages-list {
+  margin-top: 60px;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  font-family: "Cormorant Garamond";
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 15px solid #BDB1B1;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card123 {
+  background-color: #D9D9D9;
+  padding-top: 0px;
+  width: 220px;
+  min-height: 350px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.card123:hover {
+  background-color: #F5F4F3;
+  box-shadow: 4px 8px 25px #311E17;
+}
+
+.card__top {
+  flex: 0 0 220px; /* Задаем высоту 220px, запрещаем расширение и сужение по высоте */
+  position: relative;
+  overflow: hidden; /* Скрываем, что выходит за пределы */
+}
+
+/* Контейнер для картинки */
+.card__image {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Встраиваем картинку в контейнер card__image */
+  transition: 0.2s;
+}
+
+/* При наведении - увеличивает картинку */
+.card__image:hover > img {
+  transform: scale(1.1);
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.card__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #414141;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+  text-decoration: none;
+}
+
+.card__add {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #837062;
+  border-radius: 4px;
+  cursor: pointer; /* Меняем курсор при наведении */
+  transition: 0.2s;
+  margin-top: auto;
+  text-decoration: none; /* Прижимаем кнопку к низу карточки */
+}
+
+a {
+  text-decoration: none;
+}
+
+.card__add:hover {
+  border: 1px solid #6A5547;
+  background-color: #837062;
+  color: #D8CABD;
+  text-decoration: none;
+}
+
+.cards {
+  display: grid;
+  /* Автоматически заполняем на всю ширину grid-контейнера */
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1000px; /* Ширина grid-контейнера */
+  justify-content: center;
+  justify-items: center; /* Размещаем карточку по центру */
+  column-gap: 30px; /* Отступ между колонками */
+  row-gap: 40px; /* Отступ между рядами */
+  margin: 0 auto;
+}
+
+.featuresclass{
+  background-color: #F5F4F3;
+}
+
+.advantagesclass {
+  background-color: #f9f8f8;
+  width: 600px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.ico-wrap {
+  color: #D9D9D9;
+  width: 50px;
+  height: 50px;
+  margin: 25px 20px 2px 2px;
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid #D9D9D9;
+  float: left;
+}
+
+.ico-contact {
+  line-height: 1.9 !important;
+}
+
+.descript-wrapper {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.aio-icon-title {
+  font-size: 25px;
+  color: #000000;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .descript-wrapper,
+  .ico-wrap {
+    float: none;
+    text-align: center;
+  }
+  .ico-wrap {
+    margin: 0 auto 15px auto;
+  }
+}
+
+.advantages1234 {
+  width: 510px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
